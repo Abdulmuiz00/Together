@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    font-family: sans-serif;
+    padding: 3rem;
+}
+section .first{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .first h2{
+    width: 50%;
+}
