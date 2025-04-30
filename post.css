@@ -23,7 +23,6 @@
 .post .first h2{
     width: 50%;
 }
-
 .post .second{
     width: 100%;
     height: 100%;
@@ -33,7 +32,6 @@
     height: 100%;
     object-fit: contain;
 }
-
 .post .third{
     display: flex;
     flex-direction: column;
@@ -43,7 +41,6 @@
     width: 60%;
     margin: 0 auto;
 }
-
 .post .four{
     display: flex;
     flex-direction: column;
