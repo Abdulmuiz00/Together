@@ -117,14 +117,55 @@ section{
     }
 
     .four .cards{
-        overflow-x: scroll;
-        overflow-y: hidden;
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
-    
     .four .cards .card{
-        /* border: 2px solid black; */
+        width: 100%;
+    }
+    .four .cards .card .text h4{
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    section{
+        padding: 20px;
+    }
+    .first h2{
         width: 100%;
     }
 
+    .third p{
+        width: 100%;
+    }
+
+    .four{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .four h1{
+        margin: 0 auto;
+    }
+    .four .cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .four .cards .card{
+        width: 49%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .four .cards .card .text .cein small,
+    .four .cards .card .text h4{
+        font-size: 15px;
+    }
+    .four .cards .card .text .cein p{
+        font-size: 20px;
+        width: 100%;
+    }
 }
