@@ -3,10 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
-.background{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("filter.JPG") center/cover no-repeat;
+.filter{
+    font-family: sans-serif;
+    height: 100vh;
 }
+.filter .background{
+    background: linear-gradient(rgba(121, 99, 99, 0.955), rgba(135, 122, 122, 0.887)),
+    url("filter.JPG") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.filter .background .card{
+    background-color: #fff;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+}
+.filter .background .card .first h1{
+    width: 100%;
+    margin: 0 auto;
+}
+/* .filter .first{
+    width: 100%;
+} */
+.color{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.color .one{
+    display: flex;
+}
+.color .two{
+    display: flex;
+}
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+.dot1 {
+    background-color: #c6a994; }
+.dot2 {
+    background-color: #000000; }
+.dot3 {
+    background-color: #2f73b5; }
+.dot4 {
+    background-color: #8a5432; }
+.dot5 {
+    background-color: #4a773c; }
+.dot6 {
+    background-color: #9a796c; }
+.dot7 {
+    background-color: #f16529; }
+.dot8 {
+    background-color: #d32f2f; }
+.dot9 {
+    background-color: #f6e3d3; }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .background{
