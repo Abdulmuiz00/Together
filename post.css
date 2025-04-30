@@ -6,12 +6,64 @@
 section{
     font-family: sans-serif;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
-section .first{
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.first .when{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-section .first h2{
+.first h2{
     width: 50%;
+}
+
+.second{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+}
+.second img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.third p{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.four h1{
+    margin: 0 auto;
+}
+.four .cards{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.four .cards .card{
+    border: 2px solid black;
+    width: 25%;
+}
+.four .cards .card .image{
+    border: 2px solid black;
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+.four .cards .card .image img{
+    width: 100%;
+    height: 100%;
 }
