@@ -15,19 +15,36 @@
     position: relative;
 }
 .filter .background .card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #fff;
     width: 25%;
     height: 100vh;
     position: absolute;
     right: 0%;
 }
-.filter .background .card .first h1{
-    width: 100%;
-    margin: 0 auto;
+.filter .background .card .first{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
-/* .filter .first{
-    width: 100%;
-} */
+.filter .background .card .first h1{
+    margin: 0 auto;
+    font-size: 20px;
+}
+.filter .background .card .second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter .background .card .third h2,
+.filter .background .card .second h2{
+    font-size: 15px;
+}
 .color{
     display: flex;
     flex-direction: column;
@@ -35,37 +52,87 @@
 }
 .color .one{
     display: flex;
+    gap: 5%;
 }
 .color .two{
     display: flex;
+    gap: 5%;
 }
-.dot {
+.dot{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-  }
+}
+.dot1{
+    background-color: #c6a994;
+}
+.dot2{
+    background-color: #000000;
+}
+.dot3{
+    background-color: #2f73b5;
+}
+.dot4{
+    background-color: #8a5432;
+}
+.dot5{
+    background-color: #4a773c;
+}
+.dot6{
+    background-color: #9a796c;
+}
+.dot7{
+    background-color: #f16529;
+}
+.dot8{
+    background-color: #d32f2f;
+}
+.dot9{
+    background-color: #f6e3d3;
+}
+.filter .background .card .third{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+.filter .background .card .third .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter .background .card .third .text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filter .background .card .third .text ul li{
+    list-style-type: none;
+}
+.filter .background .card .four{
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+.filter .background .card .four button{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
 
-.dot1 {
-    background-color: #c6a994; }
-.dot2 {
-    background-color: #000000; }
-.dot3 {
-    background-color: #2f73b5; }
-.dot4 {
-    background-color: #8a5432; }
-.dot5 {
-    background-color: #4a773c; }
-.dot6 {
-    background-color: #9a796c; }
-.dot7 {
-    background-color: #f16529; }
-.dot8 {
-    background-color: #d32f2f; }
-.dot9 {
-    background-color: #f6e3d3; }
 
+
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .filter .background .card{
+        width: 100%;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-    .background{
-        background: none;
+    .filter .background .card{
+        width: 50%;
+        height: 70%;
+        right: 25%;
+        top: 15%;
     }
 }
