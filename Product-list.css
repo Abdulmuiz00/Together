@@ -59,3 +59,20 @@ nav{
     display: flex;
     gap: 5px;
 }
+.cloth{
+    padding: 2rem;
+}
+.cloth-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cloth-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cloth-card-image{
+    background: #F6F6F6;
+    height: 100%;
+}
