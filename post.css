@@ -25,7 +25,6 @@ section{
 }
 
 .second{
-    /* border: 2px solid black; */
     width: 100%;
     height: 100%;
 }
@@ -59,16 +58,14 @@ section{
     gap: 20px;
 }
 .four .cards .card{
-    border: 2px solid black;
     width: 25%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 .four .cards .card .image{
-    border: 2px solid black;
     width: 100%;
-    height: 75%;
+    height: 300px;
     overflow: hidden;
 }
 .four .cards .card .image img{
@@ -79,4 +76,55 @@ section{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.four .cards .card .text .cein small,
+.four .cards .card .text h4{
+    font-size: 11px;
+}
+.four .cards .card .text .cein{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.four .cards .card .text .cein p{
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 767px) {
+    section{
+        padding: 10px;
+        padding-top: 3rem;
+    }
+    
+    .first{
+        gap: 20px;
+    }
+    .first h2{
+        width: 100%;
+    }
+    
+    .second{
+        height: 400px;
+    }
+    .second img{
+        object-fit: cover;
+    }
+    .third p{
+        width: 100%;
+    }
+
+    .four .cards{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100vw;
+    }
+    
+    .four .cards .card{
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+
 }
