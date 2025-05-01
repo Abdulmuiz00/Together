@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blog{
+    background-image: url(blog\ img.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    font-family: Inter, sans-serif;
+}
+.blog .blog-head{
+    padding: 400px 40px 40px 40px;
+}
+.blog-head h1{
+    color: white;
+    width: 300px;
+    font-weight: 500;
+}
+.last-news{
+    margin: 20px 40px;
+    font-family: Inter, sans-serif;
+    height: 110vh;
+}
+.blog-sto #cut{
+    width: 100%;
+    height: 90vh;
+}
+.blog-sto #cut img{
+    width: 100%;
+    height: 90vh;
+}
+.last-news h1{
+    line-height: 60px;
+}
+.coporate{
+    background-color: white;
+    width: 300px;
+   
+    padding-left: 40px;
+    position: relative;
+    bottom: 400px;
+    left: 50px;
+}
+.coporate div small{
+    font-size: 10px;
+}
+.coporate div #text{
+    line-height: 50px;
+}
+.coporate div #date{
+    line-height: 20px;
+}
+.coporate div{
+    padding: 80px 20px;
+}
+.coporate div p{
+    width: 240px;
+}
+.expansion{
+    margin: 20px 40px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.expansion-text div img{
+    width: 100%;
+}
+.expansion .expansion-text{
+    font-family: Inter, sans-serif;
+}
+.expansion-text .exp{
+    padding: 9px 0px;
+}
+.expansion-text .exp small{
+    font-size: 11px;
+}
+.expansion-text .exp #text{
+    line-height: 30px;
+}
+.exp p{
+    width: 350px;
+    font-size: 20px;
+}
+@media (min-width: 200px) and (max-width: 767px){
+    .blog .blog-head{
+        padding: 400px 20px 40px 20px;
+    }
+    .last-news{
+        margin: 20px 20px;
+        height: 90vh;
+    }
+    .blog-sto #cut{
+        width: 100%;
+        height: 50vh;
+    }
+    .blog-sto #cut img{
+        width: 100%;
+        height: 50vh;
+    }
+    .coporate div{
+        padding: 40px 5px;
+    }
+    .coporate div{
+        padding: 20px 5px;
+    }
+    .coporate{
+        position: relative;
+        left: -5px;
+        top: 1px;
+    }
+    .expansion{
+        margin: 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .exp p{
+        width: 320px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .last-news{
+        margin: 20px 40px;
+        border: 1px solid blue;
+        height: 60vh;
+    }
+    .blog-sto #cut{
+        width: 100%;
+        height: 50vh;
+    }
+    .blog-sto #cut img{
+        width: 100%;
+        height: 50vh;
+    }
+    .coporate div{
+        padding: 40px 5px;
+    }
+    .expansion{
+        margin: 20px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .expansion-text .exp small{
+        font-size: 13px;
+    }
+    .expansion-text .exp #text{
+        line-height: 40px;
+    }
+}
