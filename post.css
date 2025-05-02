@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.post{
+    font-family: sans-serif;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.post .first{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.post .first .when{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post .first h2{
+    width: 50%;
+}
+.post .second{
+    width: 100%;
+    height: 100%;
+}
+.post .second img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.post .third{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.post .third p{
+    width: 60%;
+    margin: 0 auto;
+}
+.post .four{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.post .four h1{
+    margin: 0 auto;
+}
+.post .four .cards{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.post .four .cards .card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post .four .cards .card .image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.post .four .cards .card .image img{
+    width: 100%;
+    height: 100%;
+}
+.post .four .cards .card .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.post .four .cards .card .text .cein small,
+.post .four .cards .card .text h4{
+    font-size: 11px;
+}
+.post .four .cards .card .text .cein{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post .four .cards .card .text .cein p{
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .post{
+        padding: 10px;
+        padding-top: 3rem;
+    }
+    
+    .post .first{
+        gap: 20px;
+    }
+    .post .first h2{
+        width: 100%;
+    }
+    
+    .post .second{
+        height: 400px;
+    }
+    .post .second img{
+        object-fit: cover;
+    }
+    .post .third p{
+        width: 100%;
+    }
+
+    .post .four .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .post .four .cards .card{
+        width: 100%;
+    }
+    .post .four .cards .card .text h4{
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .post{
+        padding: 20px;
+    }
+    .post .first h2{
+        width: 100%;
+    }
+
+    .post .third p{
+        width: 100%;
+    }
+
+    .post .four{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .post .four h1{
+        margin: 0 auto;
+    }
+    .post .four .cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .post .four .cards .card{
+        width: 49%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .post .four .cards .card .text .cein small,
+    .post .four .cards .card .text h4{
+        font-size: 15px;
+    }
+    .post .four .cards .card .text .cein p{
+        font-size: 20px;
+        width: 100%;
+    }
+}
