@@ -85,6 +85,10 @@ nav .down .left h1{
     align-items: center;
     gap: 80px;
 }
+.shop .shop-bar .left a{
+    text-decoration: none;
+    color: black;
+}
 .shop .shop-bar .left .sort{
     display: flex;
     gap: 5px;
